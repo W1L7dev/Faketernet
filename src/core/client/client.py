@@ -7,7 +7,6 @@ def session():
     while True:
         print("Enter a request:")
         request = input("> ").split(" ", 1)
-        print(request)
         match request[0]:
             case "GET":
                 request = GetRequest(request[1])

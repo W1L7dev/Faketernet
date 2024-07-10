@@ -1,5 +1,11 @@
+############################################
+#   REQUESTS.py   #   HTTP-like requests   #
+############################################
+
+from core.server.url import Url
+
 class Request:
-    def __init__(self, type: str, request: str):
+    def __init__(self, type: str, request: Url):
         self.type = type
         self.request = request
 
